@@ -1,2 +1,2 @@
 <h1>GIT EXERCISES SOLUTIONS</h1>
-The project for series of git exercises
+<h2>BUNDLE 1 # EXERCISE 1</h2>
