@@ -1,7 +1,7 @@
 <h1>GIT EXERCISES SOLUTIONS</h1>
 <h2>BUNDLE 1 # EXERCISE 1</h2>
 
-``$ git add README.md
+`$ git add README.md
 
 GLORIA@DESKTOP-1F1FCSK MINGW64 ~/documents/git-exercises-GYM (main)
 $ git status
