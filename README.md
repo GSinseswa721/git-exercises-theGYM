@@ -400,4 +400,100 @@ branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
 
 Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/service-redesign)
 $
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git checkout feature-branch
+error: pathspec 'feature-branch' did not match any file(s) known to git
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git status
+On branch ft/contact-page
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git checkout -b ft/team-page
+fatal: a branch named 'ft/team-page' already exists
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/team-page)
+$ git log
+commit 82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Fri Jul 28 11:09:00 2023 +0200
+
+    added team page
+
+commit 37f0256ef4e1c4aa6b03439605815bdea248438f (origin/main, origin/HEAD, main, ft/contact-page)
+Merge: 16848b6 abbfc89
+Author: Gloria Niyonkuru Sinseswa <85382004+GSinseswa721@users.noreply.github.com>
+Date:   Fri Jul 28 10:57:41 2023 +0200
+
+    Merge pull request #3 from GSinseswa721/ft/service-redesign
+
+    added service list
+
+commit abbfc897808bc94640d9d38c85ea70f179c77ac1 (origin/ft/service-redesign, ft/service-redesign)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Thu Jul 27 12:36:39 2023 +0200
+
+    updated readme
+:
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git cherry-pick git checkout feature-branch
+fatal: bad revision 'git'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git cherry-pick 82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1~
+fatal: bad revision '82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1~'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git cherry-pick 82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1
+fatal: bad revision '82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git cherry-pick 82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1
+fatal: bad revision '82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git cherry-pick 82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1
+fatal: bad revision '82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de1'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git cherry-pick 82c6e5358c3707a0bf1591e13d4fbb1a8b0f43de
+[ft/contact-page fe441cf] added team page
+ Date: Fri Jul 28 11:09:00 2023 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git log
+commit fe441cf6fecbd0efbde0190adabfb486a1d45dd1 (HEAD -> ft/contact-page)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Fri Jul 28 11:09:00 2023 +0200
+
+    added team page
+
+commit 37f0256ef4e1c4aa6b03439605815bdea248438f (origin/main, origin/HEAD, main)
+Merge: 16848b6 abbfc89
+Author: Gloria Niyonkuru Sinseswa <85382004+GSinseswa721@users.noreply.github.com>
+Date:   Fri Jul 28 10:57:41 2023 +0200
+
+    Merge pull request #3 from GSinseswa721/ft/service-redesign
+
+    added service list
+
+commit abbfc897808bc94640d9d38c85ea70f179c77ac1 (origin/ft/service-redesign, ft/service-redesign)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Thu Jul 27 12:36:39 2023 +0200
+
+    updated readme
+:
   
