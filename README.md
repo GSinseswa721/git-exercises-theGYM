@@ -400,4 +400,142 @@ branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
 
 Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/service-redesign)
 $
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git add --all
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git commit -m "Add contact page"
+[ft/contact-page c0292e7] Add contact page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$  git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 741 bytes | 741.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/GSinseswa721/git-exercises-theGYM/pull/new/ft/contact-page
+remote:
+To https://github.com/GSinseswa721/git-exercises-theGYM.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git add __all
+fatal: pathspec '__all' did not match any files
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git add --all
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git commit -m "Add faq page"
+[ft/faq-page 502b347] Add faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$  git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 443 bytes | 443.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/GSinseswa721/git-exercises-theGYM/pull/new/ft/faq-page
+remote:
+To https://github.com/GSinseswa721/git-exercises-theGYM.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git log
+commit 502b347beee9f25df54e109e6f0ee26679041f3e (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:23:52 2023 +0200
+
+    Add faq page
+
+commit c0292e7f1b860795c1f993abc6b62be739a04062 (origin/ft/contact-page, ft/contact-page)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:15:16 2023 +0200
+
+    Add contact page
+
+commit fe441cf6fecbd0efbde0190adabfb486a1d45dd1
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Fri Jul 28 11:09:00 2023 +0200
+
+    added team page
+
+commit 37f0256ef4e1c4aa6b03439605815bdea248438f (origin/main, origin/HEAD, main)
+Merge: 16848b6 abbfc89
+:
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git add *
+
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 230 bytes | 230.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/GSinseswa721/git-exercises-theGYM.git
+   502b347..c8ff6a6  ft/faq-page -> ft/faq-page
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$
+
+
+
   
