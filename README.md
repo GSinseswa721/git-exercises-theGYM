@@ -400,4 +400,218 @@ branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
 
 Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/service-redesign)
 $
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-rede
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (main)
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (main)
+$ git add --all
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (main)
+$ git commit -m "changes on home page"
+[main fa4fcce] changes on home page
+ 1 file changed, 1 insertion(+)
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git log
+commit c8ff6a6764103b8eaf627001cae0b5e6e6d72835 (HEAD -> ft/home-page-redesign, origin/ft/faq-page, ft/faq-page)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:36:33 2023 +0200
+
+    faq revet
+
+commit 502b347beee9f25df54e109e6f0ee26679041f3e
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:23:52 2023 +0200
+
+    Add faq page
+
+commit c0292e7f1b860795c1f993abc6b62be739a04062 (origin/ft/contact-page, ft/contact-page)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:15:16 2023 +0200
+
+    Add contact page
+
+commit fe441cf6fecbd0efbde0190adabfb486a1d45dd1
+:
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign      
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git log
+commit f7a721ecf2b4f7ffe4620b05f92901a8a4db831a (HEAD -> ft/home-page-redesign)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:36:33 2023 +0200
+
+    faq revet
+
+commit cac287f74816c50d94d51b661b402b7ed1c5fabd
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:23:52 2023 +0200
+
+    Add faq page
+
+commit 9469df822cff5b1630b2eb834bc31bb3dce508ce
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git add home.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git commit -m "added menus"
+[ft/home-page-redesign 11eb496] added menus    
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 1.80 KiB | 923.00 KiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/GSinseswa721/git-exercises-theGYM/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/GSinseswa721/git-exercises-theGYM.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git status
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/faq-page)
+$ git checkout -b ft/merge
+Switched to a new branch 'ft/merge'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/merge)
+$ git status
+On branch ft/merge
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/merge)
+$ git merge main
+Merge made by the 'ort' strategy.
+ home.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/merge)
+$ git log
+commit 79624b64a38cbe92adece366191451020cf38f18 (HEAD -> ft/merge)
+Merge: c8ff6a6 fa4fcce
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Wed Aug 2 11:20:38 2023 +0200
+
+    Merge branch 'main' into ft/merge
+
+commit fa4fccef65319006902be85b1b112fa2d232df8c (main)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Wed Aug 2 10:58:12 2023 +0200
+
+    changes on home page
+
+commit c8ff6a6764103b8eaf627001cae0b5e6e6d72835 (origin/ft/faq-page, ft/faq-page)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:36:33 2023 +0200
+
+    faq revet
+
+:
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/merge)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/Documents/git-exercises-theGYM (ft/home-page-redesign)
+$ git log
+commit 11eb496111074f11a8174e7d25d30a4702c1a5f5 (HEAD -> ft/home-page-redesign, origin/ft/home-page-redesign)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Wed Aug 2 11:07:06 2023 +0200
+
+    added menus
+
+commit f7a721ecf2b4f7ffe4620b05f92901a8a4db831a
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:36:33 2023 +0200
+
+    faq revet
+
+commit cac287f74816c50d94d51b661b402b7ed1c5fabd
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Tue Aug 1 11:23:52 2023 +0200
+
+    Add faq page
+
+commit 9469df822cff5b1630b2eb834bc31bb3dce508ce
+:
   
