@@ -614,4 +614,204 @@ Date:   Tue Aug 1 11:23:52 2023 +0200
 
 commit 9469df822cff5b1630b2eb834bc31bb3dce508ce
 :
-  
+  $ git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0        
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/GSinseswa721/git-exercises-theGYM/pull/new/ft/squashing
+remote: 
+To https://github.com/GSinseswa721/git-exercises-theGYM.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git diff ft/squashing
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git checkout ft/squashing
+Switched to branch 'ft/squashing'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git log
+commit 42dcb079c2461cf12d4e93687e5faa7d6acadae4 (HEAD -> ft/squashing)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Mon Aug 14 20:46:16 2023 +0200
+
+    footer changes squashing
+
+commit 38a65e7d6ce49ff05a48d3ed777323479b3ce0b7 (origin/main, origin/HEAD, git-copy/main, main)
+Merge: 9d93899 bfdf1b6
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Thu Aug 3 11:21:19 2023 +0200
+
+    Merge branch 'main' of https://github.com/GSinseswa721/git-exercises-theGYM
+
+commit 9d93899307cf976664a3752fe638d13b8ae85151
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+:
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+Your branch is up to date with 'origin/ft/footer'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git log
+commit 66d915fe56d8474eeb7f51e2194ffca171dd1253 (HEAD -> ft/footer, origin/ft/footer)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Mon Aug 14 19:23:28 2023 +0200
+
+    feat: add footer contents
+
+commit bde5ae9bdbecb6b51905ce6607904b3202be3409
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Mon Aug 14 19:18:58 2023 +0200
+
+    feat: add footer file
+
+commit 38a65e7d6ce49ff05a48d3ed777323479b3ce0b7 (origin/main, origin/HEAD, git-copy/main, main)
+Merge: 9d93899 bfdf1b6
+Auth
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   footer.html
+
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 42dcb07] footer changes squashing
+ 1 file changed, 8 insertions(+)
+ create mode 100644 footer.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git log
+commit 42dcb079c2461cf12d4e93687e5faa7d6acadae4 (HEAD -> ft/squashing)
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Mon Aug 14 20:46:16 2023 +0200
+
+    footer changes squashing
+
+commit 38a65e7d6ce49ff05a48d3ed777323479b3ce0b7 (origin/main, origin/HEAD, git-copy/main, main)
+Merge: 9d93899 bfdf1b6
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Thu Aug 3 11:21:19 2023 +0200
+
+    Merge branch 'main' of https://github.com/GSinseswa721/git-exercises-theGYM
+
+commit 9d93899307cf976664a3752fe638d13b8ae85151
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+:
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git add footer.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git commit -m "feat: add footer file"
+[ft/footer bde5ae9] feat: add footer file       
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 footer.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git status
+On branch ft/footer
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git status
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   footer.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git add --all
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git commit -m "feat: add footer contents"
+[ft/footer 66d915f] feat: add footer contents
+ 1 file changed, 8 insertions(+)
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 618 bytes | 206.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/GSinseswa721/git-exercises-theGYM/pull/new/ft/footer
+remote:
+To https://github.com/GSinseswa721/git-exercises-theGYM.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git status
+On branch ft/squashing
+nothing to commit, working tree clean
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git merge --squash ft/footer
+Updating 38a65e7..66d915f
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ create mode 100644 footer.html
+
+Gloria Sinseswa@DESKTOP-GP85FQ5 MINGW64 ~/documents/git-exercises-theGYM (ft/squashing)
+$ git log
+commit 38a65e7d6ce49ff05a48d3ed777323479b3ce0b7 (HEAD -> ft/squashing, origin/main, origin/HEAD, git-copy/main, main)
+Merge: 9d93899 bfdf1b6
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Thu Aug 3 11:21:19 2023 +0200
+
+    Merge branch 'main' of https://github.com/GSinseswa721/git-exercises-theGYM
+
+commit 9d93899307cf976664a3752fe638d13b8ae85151
+Author: Gsinseswa721 <glorianiyonkurusinseswa@gmail.com>
+Date:   Thu Aug 3 11:20:25 2023 +0200
+
+    feat: changes on home
+
+commit bfdf1b6d0e383bd2446ae7cdcfb5e9c7008d7707
+Author: Gloria Niyonkuru Sinseswa <85382004+GSinseswa721@users.noreply.github.com>
+:
